@@ -1,6 +1,6 @@
 // ========= CONFIG =========
 const CONFIG_FILE  = 'setlist.json';
-const MAX_LIST_LEN = 40;
+const MAX_LIST_LEN = 30;
 // ==========================
 
 // ---------- utilities ----------
