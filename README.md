@@ -1,6 +1,6 @@
-# Scriptable Setlist Helper
+# Scriptable Setlist
 
-アイドル・ライブのセットリストを **ワンタップ** で下書き生成し、X（旧Twitter）アプリやブラウザへ直接投稿できる Scriptable スクリプトです。会場・曲数・曲名を対話式に選択し、ハッシュタグも JSON で自由に管理できます。
+ライブのセットリストを **ワンタップ** で下書き生成し、X（旧Twitter）アプリやブラウザへ直接投稿できる Scriptable スクリプトです。会場・曲数・曲名を対話式に選択し、ハッシュタグも JSON で自由に管理できます。
 
 ---
 
@@ -21,7 +21,7 @@
 * 各画面に **「← 戻る」** ボタンを実装（誤タップでも安心）
 * 会場は **キーワード検索＋候補表示** 方式（大量リストでも高速）
 * 会場未登録時は **空欄スキップ** 可能
-* ハッシュタグを `idol-setlist.json` に外部化 → スクリプト改変不要
+* ハッシュタグを `setlist.json` に外部化 → スクリプト改変不要
 * 出力先は
   * X 公式アプリの投稿画面
   * Web インテント (Safari)
@@ -46,8 +46,6 @@
    *設定* › *Apple ID* › *iCloud* › **iCloud Drive** → *オン*
 3. **Scriptable フォルダ確認**
    Files.app › **iCloud Drive** › **Scriptable**
-4. (任意) **ショートカットの信頼性設定**
-   *設定* › *ショートカット* › **信頼されていないショートカットを許可** → *オン*
 ---
 
 ## 導入手順
@@ -68,7 +66,7 @@
 1. Safari で `setlist.json` を **Raw** 表示 → 長押し **すべて選択** → **コピー**。
 2. **Files** アプリを開き、*iCloud Drive* › **Scriptable** フォルダへ移動。
 3. 右上 **…** › **新規書類**（または「新規テキスト」）を選択。
-4. ファイル名を **`idol-setlist.json`** と入力 → 作成後にエディタが開くので **ペースト** → **完了**。
+4. ファイル名を **`setlist.json`** と入力 → 作成後にエディタが開くので **ペースト** → **完了**。
 
 > **もっと簡単** : Raw 画面で共有アイコン › **ファイルに保存** → *iCloud Drive ▸ Scriptable* に直接保存しても OK です。
 
@@ -89,12 +87,12 @@
      を選択
 > **ウィジェット化** するとホーム画面から直接起動できて便利です。
 ---
-## JSON ファイル仕様
+## JSON ファイル仕様(setlist_temp.jsonを参照)
 ```json
 {
-  "venues": ["Shibuya CLUB QUATTRO", "Zepp DiverCity(TOKYO)"],
-  "songs" : ["TOKYO planet Σarth", "UNISON CUBΣ"],
-  "tags"  : ["#今日のライブ", "#セットリスト"]
+  "venues": ["DESEO mini with VV", "SHIBUYA DESEO"],
+  "songs" : ["Song 1 name","Song 2 name","Song 3 name"],
+  "tags"  : ["#セットリスト"]
 }
 ```
 | キー       | 型                          | 必須 | 説明                                   |
