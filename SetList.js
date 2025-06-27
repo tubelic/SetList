@@ -1,5 +1,5 @@
 // ========= CONFIG =========
-const CONFIG_FILE  = 'idol-setlist.json';
+const CONFIG_FILE  = 'setlist.json';
 const MAX_LIST_LEN = 40;
 // ==========================
 
