@@ -56,7 +56,7 @@
 
 ### 1. スクリプト (`SetList.js`) を Scriptable に貼り付け
 
-1. **Safari** で GitHub の `setlist-helper.js` を開く → 右上 **Raw** をタップ。
+1. **Safari** で GitHub の `SetList.js` を開く → 右上 **Raw** をタップ。
 2. 画面を長押しして **すべて選択** → **コピー**。
 3. **Scriptable** アプリを開き、右上 **＋** → エディタに **ペースト**。
 4. 右上 **完了** を押して保存（ファイル名は *Setlist* など自由）。
