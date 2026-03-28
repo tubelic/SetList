@@ -1,5 +1,5 @@
 {
-    "venues": [
+   "venues": [
         "BUZZ Live 渋谷",
         "CHIC HALL",
         "CLUB SONIC MITO",
@@ -7,7 +7,8 @@
         "GATEWAY STUDIO 道玄坂店",
         "HMV＆BOOKS SHIBUYA",
         "HOLIDAY SHINJUKU",
-        "LIQUDROOM",
+        "LIQUIDROOM,
+        "LiveHall GOLDEN PIGS",
         "LIVE SQUARE 2nd LINE",
         "LOFT HEAVEN",
         "LOFT X",
@@ -25,7 +26,6 @@
         "Spotify O-WEST",
         "THE GAME",
         "TOKYO FMホール",
-        "TSUTAYA O-Crest",
         "TwinBox AKIHABARA",
         "WOMB LIVE",
         "WOMB LOUNGE",
@@ -99,6 +99,7 @@
         "新宿レッドクロス",
         "新横浜NEW SIDE BEACH!!",
         "新高円寺LOFT X",
+        "新潟LOTS",
         "東京キネマ倶楽部",
         "梅田BANGBOO",
         "梅田amHALL",
@@ -114,7 +115,6 @@
         "渋谷REX",
         "渋谷STAR LOUNGE",
         "渋谷WOMB LIVE",
-        "渋谷glad",
         "渋谷takeoff7",
         "白金高輪SELENE b2",
         "目黒鹿鳴館",
@@ -132,8 +132,8 @@
         "高円寺LOFT X",
         "高円寺Studio DeLIVE",
         "高田馬場CLUB PHASE"
-    ],
-    "songs": [
+   ],
+   "songs": [
         "TOKYO planet Σarth",
         "KISS KISS CUBΣLIC",
         "UNISON CUBΣ",
@@ -162,11 +162,17 @@
         "のってけエクスプレス",
         "シュガビタ",
         "インターフェース",
-        "いえないっしょん"
-    ],
-    "tags": [
+        "いえないっしょん",
+        "シーサイドタイムマシン(REMIX)",
+        "シーサイドタイムマシン(2025)",
+        "好きでいいですか。",
+        "多分maybeおそらくきっとそう",
+        "EXMACHINA (REMIX)",
+        "KISS KISS CUBΣLIC (REMIX)"
+   ],
+   "tags": [
         "#きゅぶセトリ",
         "#CUBΣLIC",
         "#セットリスト"
-    ]
+   ]
 }
