@@ -1,0 +1,65 @@
+name: Venue Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions の schedule は UTC です
+    - cron: "13 21 * * 0"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: venue-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run venue audit
+        run: python scripts/check_venues.py
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: venue-audit-report
+          path: reports/venue_audit.json
+          if-no-files-found: ignore
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "chore: audit venue names"
+          title: "chore: normalize venue names"
+          body: |
+            This PR was created automatically by the venue audit workflow.
+
+            What it does:
+            - normalizes high-confidence venue aliases and typo cases in `setlist.json`
+            - writes a machine-readable report to `reports/venue_audit.json`
+            - keeps low-confidence cases unchanged for manual review
+
+            Notes:
+            - If this action fails with a permission error, enable:
+              Settings -> Actions -> General -> Workflow permissions ->
+              "Read and write permissions" and
+              "Allow GitHub Actions to create and approve pull requests"
+          branch: chore/venue-audit
+          delete-branch: true
+          add-paths: |
+            setlist.json
+            reports/venue_audit.json
