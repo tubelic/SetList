@@ -50,30 +50,21 @@
 
 ## 導入手順
 
-以下の方法なら **パソコン不要・コピペだけ** で完了します。
+1. 必要なファイルのダウンロード
+  * 「Setlist.js」と「download.js」をsafariブラウザーを使ってダウンロードする
+  * ダウンロード方法はファイル名をクリックし、右上の「・・・」を押すと"Download"の項目が出てくるのでこれを押してダウンロードする
+   
+2. ファイルの移動
+  * 「ファイル」を開くと「ダウンロード」のフォルダに移動する。
+  * 右上のボタンを押して複数選択にして「Setlist.js」と「download.js」を「Scriptable」のフォルダに移動させる
 
-### 1. スクリプト (`SetList.js`) を Scriptable に貼り付け
+3. setlist.jsonのダウンロード
+  * 「Scriptable」のアプリを開くと「Setlist」と「download」のボタンが出現する
+  * 「download」のボタンを押すとsetlist.jsonをScriptableに保存してくれる
+ 
+これでセットリストの生成ツールは使えるようになる。文書の手順だとイメージしにくいので下記の動画を見ながら設定することをお勧めする。
 
-1. **Safari** で GitHub の `SetList.js` を開く → 右上 **Raw** をタップ。
-2. 画面を長押しして **すべて選択** → **コピー**。
-3. **Scriptable** アプリを開き、右上 **＋** → エディタに **ペースト**。
-4. 右上 **完了** を押して保存（ファイル名は *Setlist* など自由）。
-
-> 共有シートから「Scriptable で開く」を選べる場合は、ペースト操作すら不要です。
-
-### 2. JSON (`setlist.json`) を iCloud Drive に保存
-
-1. Safari で `setlist.json` を **Raw** 表示 → 長押し **すべて選択** → **コピー**。
-2. **Files** アプリを開き、*iCloud Drive* › **Scriptable** フォルダへ移動。
-3. 右上 **…** › **新規書類**（または「新規テキスト」）を選択。
-4. ファイル名を **`setlist.json`** と入力 → 作成後にエディタが開くので **ペースト** → **完了**。
-
-> **もっと簡単** : Raw 画面で共有アイコン › **ファイルに保存** → *iCloud Drive ▸ Scriptable* に直接保存しても OK です。
-
-### 3. 実行テスト
-
-1. Scriptable で *Setlist* を開き、右上 **▶︎** をタップ。
-2. ダイアログが順番に表示されればセットアップ完了。実行後、クリップボードに下書きがコピーされます。
+[![チュートリアル](http://img.youtube.com/vi/{rhKOoYfUsIQ}/0.jpg)](https://www.youtube.com/watch?v={rhKOoYfUsIQ})
 
 ---
 ## 使い方
