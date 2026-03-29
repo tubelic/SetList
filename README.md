@@ -64,7 +64,7 @@
  
 これでセットリストの生成ツールは使えるようになる。文書の手順だとイメージしにくいので下記の動画を見ながら設定することをお勧めする。
 
-[![チュートリアル](http://img.youtube.com/vi/{rhKOoYfUsIQ}/0.jpg)](https://www.youtube.com/watch?v={rhKOoYfUsIQ})
+[![チュートリアル](https://www.youtube.com/shorts/rhKOoYfUsIQ)](https://www.youtube.com/shorts/rhKOoYfUsIQ)
 
 ---
 ## 使い方
